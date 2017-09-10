@@ -9,10 +9,9 @@ var articleOne={
     title:'Article-One | PCSR |',
     heading:'Article-One',
     date:'9th September., 2017',
-    content:' 
-    <p> THis is first paragraph of the artice one and it has some random content </p>
-    <p> THis is second paragraph of the artice one and it has some random content same as above </p>'
-};
+    content:"    <p> THis is first paragraph of the artice one and it has some random content </p> "+
+   " <p> THis is second paragraph of the artice one and it has some random content same as above </p> "
+    };
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
