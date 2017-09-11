@@ -17,7 +17,7 @@ var articleOne = {
 	        THis is second paragraph of the artice one and it has some random content same as above.
 	    </p>`
 	};
-function createTemplate(data){    
+function createTemplate (data) {    
 var title=data.title;
 var heading=data.heading;
 var date=data.date;
