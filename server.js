@@ -5,10 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne={
+var articleOne = {
     title:'Article-One | PCSR |',
     heading:'Article-One',
-    date:`9th September., 2017',
+    date:'9th September., 2017',
+    content:  `
         <p>
 	        THis is first paragraph of the artice one and it has some random content.
 	    </p> 
