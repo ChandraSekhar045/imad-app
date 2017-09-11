@@ -9,9 +9,14 @@ var articleOne={
     title:'Article-One | PCSR |',
     heading:'Article-One',
     date:'9th September., 2017',
-    content:"    <p> THis is first paragraph of the artice one and it has some random content </p> "+
-   " <p> THis is second paragraph of the artice one and it has some random content same as above </p> "
-    };
+    <p>
+	    THis is first paragraph of the artice one and it has some random content.
+	</p> 
+    <p>
+	THis is second paragraph of the artice one and it has some random content same as above.
+	</p> 
+    '
+	};
     
 function createTemplate(data){    
 var title=data.title;
