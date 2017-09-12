@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles={
+    articleOne : {
     title: 'Article-One | PCSR |',
     heading: 'Article-One',
     date: '9th September., 2017',
@@ -16,7 +17,29 @@ var articleOne = {
         <p>
 	        THis is second paragraph of the artice one and it has some random content same as above.
 	    </p>`
-	};
+},
+    articleTwo : {
+    title: 'Article-Two | PCSR |',
+    heading: 'Article-Two',
+    date: '12th September., 2017',
+    content:  `
+        <p>
+	        THis is first paragraph of the artice two and it has some random content.
+	    </p> 
+        `
+	},
+    articleThree : {
+    title: 'Article-Three | PCSR |',
+    heading: 'Article-Three',
+    date: '12th September., 2017',
+    content:  `
+        <p>
+	        THis is first paragraph of the artice three and it has some random content.
+	    </p> 
+        `
+}
+};
+	
 function createTemplate (data) {    
 var title=data.title;
 var heading=data.heading;
