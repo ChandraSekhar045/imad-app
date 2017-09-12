@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-    articleOne : {
+    'article-One' : {
     title: 'Article-One | PCSR |',
     heading: 'Article-One',
     date: '9th September., 2017',
@@ -18,7 +18,7 @@ var articles={
 	        THis is second paragraph of the artice one and it has some random content same as above.
 	    </p>`
 },
-    articleTwo : {
+    'article-Two' : {
     title: 'Article-Two | PCSR |',
     heading: 'Article-Two',
     date: '12th September., 2017',
@@ -28,7 +28,7 @@ var articles={
 	    </p> 
         `
 	},
-    articleThree : {
+    'article-Three' : {
     title: 'Article-Three | PCSR |',
     heading: 'Article-Three',
     date: '12th September., 2017',
@@ -73,12 +73,15 @@ var htmlTemplate= `
 		
     return htmlTemplate;
 }
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function(req,res) {
-    res.send(createTemplate(articleOne));
+app.get('/:articlename', function(req,res) {
+    //articleName==articleOne
+    var articleName=req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-two', function(req,res) {
