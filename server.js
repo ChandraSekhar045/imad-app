@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    'article-One' : {
+    'article-one' : {
     title: 'Article-One | PCSR |',
     heading: 'Article-One',
     date: '9th September., 2017',
@@ -18,7 +18,7 @@ var articles = {
 	        THis is second paragraph of the artice one and it has some random content same as above.
 	    </p>`
 },
-    'article-Two' : {
+    'article-two' : {
     title: 'Article-Two | PCSR |',
     heading: 'Article-Two',
     date: '12th September., 2017',
@@ -28,7 +28,7 @@ var articles = {
 	    </p> 
         `
 	},
-    'article-Three' : {
+    'article-three' : {
     title: 'Article-Three | PCSR |',
     heading: 'Article-Three',
     date: '12th September., 2017',
